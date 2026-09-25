@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fffaf3">
+<title>Kandils</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fffaf3;color:#241b16;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{max-width:1100px;margin:auto;padding:28px 18px 50px}
+header{text-align:center;margin-bottom:28px}
+h1{margin:0;font-family:Georgia,serif;font-size:clamp(32px,6vw,52px);font-weight:700}
+.sub{margin:7px 0 0;color:#7b685d;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 5px 22px rgba(50,30,15,.09);border:1px solid #f0e5da}
+.photo{aspect-ratio:4/5;background:#f7f1ea;display:flex;align-items:center;justify-content:center}
+.photo img{width:100%;height:100%;object-fit:contain}
+.info{padding:15px 16px 18px;display:flex;align-items:center;justify-content:space-between}
+.name{font-weight:650;font-size:16px}
+.price{font-weight:750;font-size:18px}
+footer{text-align:center;color:#8b796e;font-size:12px;margin-top:28px}
+@media(max-width:520px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.wrap{padding:20px 12px 35px}.info{padding:12px}.name{font-size:14px}.price{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Kandils</h1>
+<p class="sub">Handcrafted decorative kandils</p>
+</header>
+<main class="grid">
+<article class="card"><div class="photo"><img src="images/kandil-1.webp" alt="Kandil 1" loading="lazy"></div><div class="info"><span class="name">Kandil 1</span><span class="price">₹350</span></div></article>
+<article class="card"><div class="photo"><img src="images/kandil-2.webp" alt="Kandil 2" loading="lazy"></div><div class="info"><span class="name">Kandil 2</span><span class="price">₹350</span></div></article>
+<article class="card"><div class="photo"><img src="images/kandil-3.webp" alt="Kandil 3" loading="lazy"></div><div class="info"><span class="name">Kandil 3</span><span class="price">₹350</span></div></article>
+<article class="card"><div class="photo"><img src="images/kandil-4.webp" alt="Kandil 4" loading="lazy"></div><div class="info"><span class="name">Kandil 4</span><span class="price">₹350</span></div></article>
+<article class="card"><div class="photo"><img src="images/kandil-5.webp" alt="Kandil 5" loading="lazy"></div><div class="info"><span class="name">Kandil 5</span><span class="price">₹350</span></div></article>
+<article class="card"><div class="photo"><img src="images/kandil-6.webp" alt="Kandil 6" loading="lazy"></div><div class="info"><span class="name">Kandil 6</span><span class="price">₹350</span></div></article>
+<article class="card"><div class="photo"><img src="images/kandil-7.webp" alt="Kandil 7" loading="lazy"></div><div class="info"><span class="name">Kandil 7</span><span class="price">₹350</span></div></article>
+</main>
+<footer>₹350 each</footer>
+</div>
+</body>
+</html>
